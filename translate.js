@@ -75,16 +75,16 @@ const command_cell_trans = {
     "横移動中": "ss "    
 }
 
-trans_full = function(i, e) {
-    var e = $(e);
+trans_full = function(i, e_id) {
+    let e = $(e_id);
     if (transmap[e.html()]) {
         e.html(transmap[e.html()]);
     }
 }
 
-trans_cells = function(i, e) {
-    var e = $(e);
-    var c = e.html();
+trans_cells = function(i, e_id) {
+    let e = $(e_id);
+    let c = e.html();
     //command column
     if (i % 9 == 1) {
         Object.keys(command_cell_trans).forEach(function(key) {
