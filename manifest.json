@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "InaTekken wiki navigation helper",
+  "version": "0.2.0",
+  "description": "Translates key navigation links in InaTekken wiki",
+ 
+  "content_scripts": [{
+    "js": ["jquery-3.2.1.min.js", "translate.js"],
+    "matches": ["http://seesaawiki.jp/w/inatekken/*"]	
+  }]
+}
