@@ -47,7 +47,7 @@ const transmap = {
     "備考": "Notes"    
 };
 
-hit_cell_trans = {
+const hit_cell_trans = {
     "上": "h",
     "特中": "sm",
     "中": "m",
@@ -64,7 +64,7 @@ hit_cell_trans = {
     "捌き": "parry"    
 }
 
-command_cell_trans = {
+const command_cell_trans = {
     "レイジ中に": "(rage) ",
     "レイジ中": "(rage) ",
     "立ち途中に": "ws ",
@@ -76,15 +76,15 @@ command_cell_trans = {
 }
 
 trans_full = function(i, e) {
-    var e = $(e);
+    let e = $(e);
     if (transmap[e.html()]) {
         e.html(transmap[e.html()]);
     }
 }
 
 trans_cells = function(i, e) {
-    var e = $(e);
-    var c = e.html();
+    let e = $(e);
+    let c = e.html();
     //command column
     if (i % 9 == 1) {
         Object.keys(command_cell_trans).forEach(function(key) {
