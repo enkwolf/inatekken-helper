@@ -76,15 +76,15 @@ const command_cell_trans = {
 }
 
 trans_full = function(i, e) {
-    let e = $(e);
+    var e = $(e);
     if (transmap[e.html()]) {
         e.html(transmap[e.html()]);
     }
 }
 
 trans_cells = function(i, e) {
-    let e = $(e);
-    let c = e.html();
+    var e = $(e);
+    var c = e.html();
     //command column
     if (i % 9 == 1) {
         Object.keys(command_cell_trans).forEach(function(key) {
