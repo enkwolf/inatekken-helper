@@ -1,7 +1,7 @@
 OVERVIEW
 ========
 
-Chrome browser extension for InaTekken wiki. 
+Browser extension for InaTekken wiki. 
 
 FEATURES
 ========
@@ -17,9 +17,26 @@ Translates some key parts of InaTekken wiki to make it easier to read for people
 ACTIVATION
 ==========
 
+NOTE: Loading extensions from the file system is temporary and has to be repeated when the browser 
+is restarted.
+
+Chrome
+------
+
 Go to 
 chrome://extensions/
 
 Enable Developer Mode
 
 Press "Load unpacked extension..." and select the inatekken-helper folder
+
+Firefox
+-------
+
+Go to
+about:debugging
+
+Press "Load Temporary Add-on" and select any file from the inatekken-helper folder
+
+
+
